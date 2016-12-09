@@ -21,6 +21,7 @@ More to the last point this book needs to be very casual but still accurate.  Th
 - [ ] Grammatical/Style check
 - [ ] Cover artwork
 - [ ] Chapter artwork
+
 ---
 ##Requirements:
 * Tetex/Tex-live
