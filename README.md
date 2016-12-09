@@ -36,4 +36,4 @@ More to the last point this book needs to be very casual but still accurate.  Th
 
 ---
 ##License:
-This book and repository is licensed under Creative Commons under Attribution Share-Alike 4.0
+This book and repository are licensed under Creative Commons under Attribution Share-Alike 4.0
