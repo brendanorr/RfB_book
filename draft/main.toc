@@ -1,25 +1,27 @@
 \contentsline {chapter}{\numberline {1}Getting Started}{3}{chapter.1}
 \contentsline {section}{\numberline {1.1}Installing Everything}{3}{section.1.1}
 \contentsline {section}{\numberline {1.2}The Addon}{3}{section.1.2}
-\contentsline {section}{\numberline {1.3}Quick Renders}{3}{section.1.3}
-\contentsline {section}{\numberline {1.4}Moving On}{3}{section.1.4}
-\contentsline {chapter}{\numberline {2}Apples and Oranges}{5}{chapter.2}
-\contentsline {section}{\numberline {2.1}The Juicy Details}{5}{section.2.1}
-\contentsline {section}{\numberline {2.2}Material Nodes}{5}{section.2.2}
-\contentsline {section}{\numberline {2.3}Down and Dirty with OSL}{5}{section.2.3}
-\contentsline {section}{\numberline {2.4}Microdisplacement Mayhem}{5}{section.2.4}
-\contentsline {section}{\numberline {2.5}At first it's fruit. Then\dots \emph {the World!}}{5}{section.2.5}
-\contentsline {chapter}{\numberline {3}Render Me Excited}{7}{chapter.3}
-\contentsline {section}{\numberline {3.1}Integrators}{7}{section.3.1}
-\contentsline {section}{\numberline {3.2}Denoising}{7}{section.3.2}
-\contentsline {section}{\numberline {3.3}Optimizations}{7}{section.3.3}
-\contentsline {chapter}{\numberline {4}Let Your Images Speak Volumes}{9}{chapter.4}
-\contentsline {section}{\numberline {4.1}Getting Some Atmosphere}{9}{section.4.1}
-\contentsline {section}{\numberline {4.2}When Smoke Gets in Your Eyes}{9}{section.4.2}
-\contentsline {section}{\numberline {4.3}Caveat Render}{9}{section.4.3}
-\contentsline {chapter}{\numberline {5}Thinking Outside the Window}{11}{chapter.5}
-\contentsline {section}{\numberline {5.1}Using LocalQueue to render outside of Blender}{11}{section.5.1}
-\contentsline {section}{\numberline {5.2}Using 'it'}{11}{section.5.2}
-\contentsline {section}{\numberline {5.3}Animations}{11}{section.5.3}
-\contentsline {section}{\numberline {5.4}AOVs and LPEs PDQ!}{11}{section.5.4}
-\contentsline {chapter}{\numberline {6}(Chapter 6)}{13}{chapter.6}
+\contentsline {section}{\numberline {1.3}Quick Renders}{4}{section.1.3}
+\contentsline {section}{\numberline {1.4}Moving On}{5}{section.1.4}
+\contentsline {chapter}{\numberline {2}Apples and Oranges}{7}{chapter.2}
+\contentsline {section}{\numberline {2.1}The Juicy Details}{7}{section.2.1}
+\contentsline {section}{\numberline {2.2}Material Nodes}{7}{section.2.2}
+\contentsline {section}{\numberline {2.3}Microdisplacement Mayhem}{7}{section.2.3}
+\contentsline {section}{\numberline {2.4}At first it's fruit. Then\dots \emph {the World!}}{7}{section.2.4}
+\contentsline {chapter}{\numberline {3}Render Me Excited}{9}{chapter.3}
+\contentsline {section}{\numberline {3.1}Integrators}{9}{section.3.1}
+\contentsline {section}{\numberline {3.2}Denoising}{9}{section.3.2}
+\contentsline {section}{\numberline {3.3}Optimizations}{9}{section.3.3}
+\contentsline {chapter}{\numberline {4}Let Your Images Speak Volumes}{11}{chapter.4}
+\contentsline {section}{\numberline {4.1}Getting Some Atmosphere}{11}{section.4.1}
+\contentsline {section}{\numberline {4.2}When Smoke Gets in Your Eyes}{11}{section.4.2}
+\contentsline {section}{\numberline {4.3}Caveat Render}{11}{section.4.3}
+\contentsline {chapter}{\numberline {5}Getting Node-Deep in Mud}{13}{chapter.5}
+\contentsline {section}{\numberline {5.1}Down and Dirty with OSL}{13}{section.5.1}
+\contentsline {section}{\numberline {5.2}Utility Poles}{13}{section.5.2}
+\contentsline {section}{\numberline {5.3}Manifold Mania}{13}{section.5.3}
+\contentsline {chapter}{\numberline {6}Thinking Outside the Window}{15}{chapter.6}
+\contentsline {section}{\numberline {6.1}Using LocalQueue to render outside of Blender}{15}{section.6.1}
+\contentsline {section}{\numberline {6.2}Using 'it'}{15}{section.6.2}
+\contentsline {section}{\numberline {6.3}Animations}{15}{section.6.3}
+\contentsline {section}{\numberline {6.4}AOVs and LPEs PDQ!}{15}{section.6.4}

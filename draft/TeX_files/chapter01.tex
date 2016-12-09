@@ -1,14 +1,28 @@
-\chapter{Getting Started}
+\chapter{Getting Started}  % Cover image: Composited image of this chapters scene before and after with gradient wipe in the middle.
 \section{Installing Everything}
+
 First things first...we need to get everything together!
-Blender is easy enough to install.  Head to \url{http://www.blender.org} with your favorite browser and download the appropriate version for your OS from the download section.  Blender doesn't care where you install it.  Just extract the archive and put it somewhere appropriate.  Alternatively, if you are running Linux you can use your distribution's package manager to install it.\begin{figure}\includegraphics[height=2in]{blender001}	\caption{\url{http://www.blender.org/download}}\end{figure}
-\todo{Fix flow of figure 1.1}
+Blender is easy enough to install.  Head to \url{http://www.blender.org} with your favorite browser and download the appropriate version for your OS from the download section.  Blender doesn't care where you install it.  Just extract the archive and put it somewhere appropriate.  Alternatively, if you are running Linux you can use your distribution's package manager to install it
+\missingfigure{Blender Download Website}
 After installing Blender it is time to install PRMan.  To download PRMan you need to have a forum account at \url{http://renderman.pixar.com}.
 \todo{Insert step-by-step for downloading PRMan}
 \section{The Addon}
 \todo{Discuss Addon Installation}
 \section{Quick Renders}
-\todo{Quick scene with default cube}
+
+Alright!  Now that we are all set up it is time to test out the addon.  We'll begin by rendering a quick cube on a simple plane.  Go ahead and create a simple scene in blender and hit the \textsf{F12} button.  
+\missingfigure{"Marvelous Monotany" - image of cube on plane with default materials}
+If things are setup correctly then you should see your 3D view change to the Image Viewer and a progress bar start at the top of the screen.  Periodically, the image will update as \textbf{prman} renders the image in an \emph{incremental} fashion.  Remember that word---we'll get to that later.  For now bask in the glow of your image rendered with the exact same software that rendered Pixar's hit movies.  Doesn't look so great though, right?  Lets change that by adding a material.
+
+At this time lets change our screen to something a bit more efficient.  If you are an experienced Blender artist you may already have a workflow that works.  Follow it.  The addon won't make you veer too far from what you currently are used to.  If you are just starting with Blender then I would suggest using one of the preset layouts.  In the menu bar click the icon next to the \textsf{Help} menu.  Of these preset layouts select \textsf{Compositing}.  This layout features a \textsf{Node Editor}, \textsf{Image Viewer}, and a \textsf{3D Viewport}.  All 3 are useful and with that big \textsf{Node Editor} pane it helps so you don't feel too cramped.  At any point of time you can press Ctrl+$\downarrow$ to maximize the pane to the entire window and again to go back again.  At this point it should be noted that there are multiple ways of doing things.  Editing materials is one such way with multiple paths.  You can use the \textsf{Node Editor} \emph{and/or} you can use the \textsf{Material}'s property panel.  Right now we are going to focus on the node-centric method as visually its the clearest way to see organization of everything at once.  If you are interested in learning about the other method please read Appendix \todo{Insert reference to entry in the appendix when it is written}
+
+Along the bottom of the \textsf{Node Editor}'s pane is its menu bar.  Next to \textsf{Help} menu there are some buttons.  Change to \textsf{Shader} mode by clicking the one that resembles a checkered sphere.  If your object already has a material assigned to it you'll see its name in the text box.  If not just click the "\textsf{ +    New}" button and rename it if you wish.  Now we need to instruct Blender that we want to assign materials through a node graph.  We do this by checking the \textsf{Use Nodes} checkbox.  You will see a couple nodes already in the editor.  These are \emph{Cycles} material nodes.  You see, you can have multiple graphs for multiple renders in the same material.  This is handy if you have to swap between Cycles, PRMan, Lux, Yafaray, or any other renderer.  For now we are just going to delete it to reduce clutter.  With your cursor in the \textsf{Node Editor} press \keystroke{A} to select all and then press \keystroke{X} to delete.  With the Cycles nodes gone we have a blank canvas to make our material.
+
+Lets start by adding a material output.  Press \keystroke{Shift+A} to bring up the \textsf{Add} menu and select \textsf{PRMan Material} from the \textsf{PRMan Outputs} submenu.  This creates the endpoint node for all of the other nodes in the material.  Its kind of a big deal.  At this point you can see it has three inputs:  \textsf{Bxdf}, \textsf{Light}, and \textsf{Displacement}.  \textsf{Bxdf} can be thought as an analog to Cycles \textsf{Bsdf}.  They are a \emph{closure} that the renderer uses to compute ray interaction.  This is where most of your node networks will work toward.  Below that we have the \textsf{Light} input.  This is where you will attach a \textsf{PxrMeshLight}.  By the way, if you see a node that doesn't start with "Pxr"...it probably shouldn't be plugged into the \textsf{PRMan Material} node.  Lastly, there is the \textsf{Displacement} input.  This is where you would connect your \textsf{PxrDisplace} node so you can procedurally modify the geometry of your object. 
+\missingfigure{"All nodes lead to the ocean material" - screenshot of simple material}
+
+PRMan has several Bxdfs that can be used for different purposes in different situations.  The most common ones to use are \textsf{PxrSurface} or \textsf{PxrDisney}.  The latter obviously is the production shader used for many of Pixar's more recent movies such as \textsl{Finding Dory}. Either shader has a lot of options and can be daunting at first.  The key is to play with each to see what they do.  Or the impatient can just go to the PRMan Documentation\footnote{\url{https://renderman.pixar.com/view/documentation}} and look at the page for the shader.  The documentation gives examples of what each parameter does for most of the shaders and textures.
+
 \section{Moving On}
 \todo{Foreshadowing the rest of the book}
 
