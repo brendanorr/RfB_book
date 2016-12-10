@@ -1,0 +1,57 @@
+\documentclass[letterpaper,12pt,twoside]{book}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{todonotes}
+\usepackage{fullpage}
+\usepackage{float}
+\usepackage{wrapfig}
+
+\definecolor{ColorURL}{HTML}{0000c0}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=ColorURL,urlcolor=ColorURL}
+\urlstyle{same}
+
+
+
+\graphicspath{{./figures/}}
+
+\newcommand{\keystroke}[1]{\texttt{\textbf{#1}}} % Keystroke macro, replace with something prettier.
+
+\begin{document}
+
+\author{Brendan Orr}
+\title{RenderMan for Blender}
+\date{December 2016}
+
+\include{./TeX_files/cover}
+\include{./TeX_files/legal}
+\frontmatter
+\maketitle
+
+
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[RO,LE]{\bfseries RenderMan for Blender}
+\fancyfoot{}
+\fancyfoot[RO,LE]{\thepage}
+
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\voffset}{0.0pt}
+
+\tableofcontents
+\mainmatter
+\include{./TeX_files/preface}
+\include{./TeX_files/chapter01}
+\include{./TeX_files/chapter02}
+\include{./TeX_files/chapter03}
+\include{./TeX_files/chapter04}
+\include{./TeX_files/chapter05}
+\include{./TeX_files/chapter06}
+
+
+\backmatter
+% bibliography, glossary and index would go here.
+
+\end{document}

@@ -1,0 +1,12 @@
+Styleguide
+
+Oxford commas:  Use them.  In the odd sentance below notice the comma after
+"iguana"
+	Example:  Listing this item, an iguana, and a screwdriver with a comma
+before the conjunction.  
+
+Keystrokes should make use of the defined \keystrokei{} macro
+
+Use inline screencap images whenever possible to help aid in visual
+recognition **for first occurance only** all remaining occurances should use
+Sans-serif typefaces (\textsf{} macro)
