@@ -1,4 +1,4 @@
-\documentclass[letterpaper,12pt,twoside]{book}
+\documentclass[letterpaper,12pt,twoside]{book} % Should a size other than letter be used?
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage{fancyhdr}
@@ -7,22 +7,22 @@
 \usepackage{float}
 \usepackage{wrapfig}
 
+% URI link style
 \definecolor{ColorURL}{HTML}{0000c0}
 \usepackage{hyperref}
 \hypersetup{colorlinks=true,linkcolor=ColorURL,urlcolor=ColorURL}
 \urlstyle{same}
 
+\graphicspath{{./figures/}{./covers}}
 
-
-\graphicspath{{./figures/}}
-
+% Custom macros
 \newcommand{\keystroke}[1]{\texttt{\textbf{#1}}} % Keystroke macro, replace with something prettier.
 
 \begin{document}
 
 \author{Brendan Orr}
 \title{RenderMan for Blender}
-\date{December 2016}
+\date{\month \year}
 
 \include{./TeX_files/cover}
 \include{./TeX_files/legal}

@@ -22,6 +22,8 @@ More to the last point this book needs to be very casual but still accurate.  Th
 - [ ] Cover artwork
 - [ ] Chapter artwork
 
+For errata, corrections, or in general changes since a release has been made please go to https://brendanorr.github.io/RfB_book/
+
 ---
 ##Requirements:
 * Tetex/Tex-live
